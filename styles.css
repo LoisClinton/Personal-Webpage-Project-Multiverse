@@ -1,6 +1,17 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 html {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+}
+
 body,
 h1,
 h2,
@@ -11,31 +22,17 @@ h6 {
   font-family: "Montserrat", sans-serif;
 }
 
-.lois-row-padding img {
-  margin-bottom: 12px;
-}
-
 .lois-sidebar {
   width: 120px;
   background: #222;
 }
 
+.lois-row-padding img {
+  margin-bottom: 12px;
+}
+
 #main {
   margin-left: 120px;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-html {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-body {
-  margin: 0;
 }
 
 hr {
@@ -81,6 +78,7 @@ h6 {
   max-width: 100%;
   height: auto;
 }
+
 img {
   vertical-align: middle;
 }
@@ -103,16 +101,6 @@ img {
   white-space: nowrap;
 }
 
-.lois-button {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.lois-btn:disabled,
 .lois-button:disabled {
   cursor: not-allowed;
   opacity: 0.3;
@@ -259,6 +247,10 @@ img {
   .lois-threequarter {
     width: 74.99999%;
   }
+
+  .lois-whole {
+    width: 100;
+  }
 }
 
 .lois-rest {
@@ -315,21 +307,8 @@ img {
   border-radius: 50%;
 }
 
-.lois-row-padding,
-.lois-row-padding > .lois-half,
-.lois-row-padding > .lois-third,
-.lois-row-padding > .lois-twothird,
-.lois-row-padding > .lois-threequarter,
-.lois-row-padding > .lois-quarter,
-.lois-row-padding > .lois-col {
-  padding: 0 8px;
-}
-
 .lois-hover-shadow:hover {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.lois-spin {
-  animation: lois-spin 2s infinite linear;
 }
 
 .lois-opacity,
@@ -341,7 +320,7 @@ img {
   opacity: 1;
 }
 
-/* Sizes */
+/* FONT Sizes */
 
 .lois-tiny {
   font-size: 10px !important;
@@ -367,6 +346,8 @@ img {
 .lois-jumbo {
   font-size: 64px !important;
 }
+
+/* TEXT Alignment */
 .lois-left-align {
   text-align: left !important;
 }
@@ -379,6 +360,8 @@ img {
 .lois-center {
   text-align: center !important;
 }
+
+/* BORDER Styles */
 .lois-border-0 {
   border: 0 !important;
 }
@@ -409,6 +392,18 @@ img {
 .lois-rightbar {
   border-right: 6px solid #ccc !important;
 }
+
+/* MARGINS and PADDING */
+.lois-row-padding,
+.lois-row-padding > .lois-half,
+.lois-row-padding > .lois-third,
+.lois-row-padding > .lois-twothird,
+.lois-row-padding > .lois-threequarter,
+.lois-row-padding > .lois-quarter,
+.lois-row-padding > .lois-col {
+  padding: 0 8px;
+}
+
 .lois-section,
 .lois-code {
   margin-top: 16px !important;
@@ -470,26 +465,30 @@ img {
 .lois-padding-top-24 {
   padding-top: 24px !important;
 }
+
 .lois-left {
   float: left !important;
 }
 .lois-right {
   float: right !important;
 }
+
+/* ON HOVER */
 .lois-button:hover {
   color: #000 !important;
   background-color: #ccc !important;
 }
+
 .lois-transparent,
 .lois-hover-none:hover {
   background-color: transparent !important;
 }
+
 .lois-hover-none:hover {
   box-shadow: none !important;
 }
 
-/* Colors */
-
+/* COLOURS */
 .lois-white,
 .lois-hover-white:hover {
   color: #000 !important;
@@ -522,6 +521,7 @@ img {
   background-color: #616161 !important;
 }
 
+/* TEXT COLOURS */
 .lois-text-white,
 .lois-hover-text-white:hover {
   color: #fff !important;
@@ -551,6 +551,7 @@ img {
   color: #3a3a3a !important;
 }
 
+/* BORDER COLOURS */
 .lois-border-white,
 .lois-hover-border-white:hover {
   border-color: #fff !important;
@@ -576,4 +577,50 @@ img {
 .lois-border-dark-gray,
 .lois-hover-border-dark-gray:hover {
   border-color: #616161 !important;
+}
+
+/* ANIMATIONS */
+.smoky-text-animation {
+  animation: smoky 5s revergitse both;
+}
+.fade-in-text {
+  animation: fadeIn 5s;
+}
+
+.fade-in-navbar {
+  animation: 3s ease-in 2s 1 both fadeIn;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes smoky {
+  70% {
+    text-shadow: 0 0 40px white;
+  }
+
+  to {
+    transform: translate3d(15rem, -8rem, 0) rotate(-40deg) skewX(70deg)
+      scale(1.5);
+    text-shadow: 0 0 20px white;
+    opacity: 0;
+  }
+}
+@keyframes smoky-mirror {
+  70% {
+    text-shadow: 0 0 40px white;
+  }
+
+  to {
+    transform: translate3d(18rem, -8rem, 0) rotate(-40deg) skewX(-70deg)
+      scale(2);
+    text-shadow: 0 0 20px white;
+    opacity: 0;
+  }
 }

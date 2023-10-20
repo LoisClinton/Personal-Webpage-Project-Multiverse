@@ -5,29 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lois Portfolio Website</title>
     <link rel="stylesheet" href="./styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat  "
-    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+    </style>
   </head>
   <body class="lois-black">
-    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <!-- (Sidebar - hidden on small screens) -->
     <nav
       class="lois-sidebar lois-bar-block lois-small lois-hide-small lois-center"
     >
-      <!-- Avatar image in top left corner -->
-      <img src="./assets/Polish_20230611_120226203~5.jpg" style="width: 80%" />
-
+      <!-- SVG Sidebar Image -->
+      <img alt="Image of Lois" src="./assets/SVG-of-me.svg" />
       <a
         href="#"
         class="lois-bar-item lois-button lois-padding-large lois-black"
       >
-        <!-- <img
-          src="./assets/house-chimney-floor-svgrepo-com.svg"
-          style="width: 40%"
-        /> -->
-        <!-- <?xml version="1.0" encoding="utf-8"?>Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-
         <svg
           width="50px"
           height="50px"
@@ -138,7 +130,7 @@
       </a>
     </nav>
 
-    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <!-- (Navbar - hidden on medium and large screens) -->
     <div class="lois-top lois-hide-large lois-hide-medium" id="myNavbar">
       <div
         class="lois-bar lois-black lois-opacity lois-hover-opacity-off lois-center lois-small"
@@ -146,25 +138,31 @@
         <a
           href="#"
           class="lois-bar-item lois-button"
-          style="width: 25% !important"
+          style="width: 20% !important"
           >HOME</a
         >
         <a
           href="#about"
           class="lois-bar-item lois-button"
-          style="width: 25% !important"
-          >ABOUT</a
+          style="width: 20% !important"
+          >BIO</a
         >
         <a
           href="#photos"
           class="lois-bar-item lois-button"
-          style="width: 25% !important"
-          >PHOTOS</a
+          style="width: 20% !important"
+          >HOBBY SHOWCASE</a
+        >
+        <a
+          href="#code"
+          class="lois-bar-item lois-button"
+          style="width: 20% !important"
+          >CODE</a
         >
         <a
           href="#contact"
           class="lois-bar-item lois-button"
-          style="width: 25% !important"
+          style="width: 20% !important"
           >CONTACT</a
         >
       </div>
@@ -172,13 +170,14 @@
 
     <!-- Main Page Content -->
     <div class="lois-padding-large" id="main">
-      <!-- Header/Home -->
+      <!-- Header/HomePage -->
       <header
         class="lois-container lois-padding-32 lois-center lois-black"
         id="home"
       >
         <h1 class="lois-jumbo">
-          <span class="lois-hide-small">I'm</span> Lois Clinton.
+          <span class="lois-hide-small .smoky-text-animation">I'm</span> Lois
+          Clinton.
         </h1>
         <p>Aspiring Software Engineer.</p>
         <!-- icon when big -->
@@ -224,8 +223,10 @@
         class="lois-content lois-justify lois-text-grey lois-padding-64"
         id="about"
       >
+        <!-- Bio Heading -->
         <h2 class="lois-text-light-grey">Who am i?</h2>
         <hr style="width: 200px" class="lois-opacity" />
+        <!-- Bio Description -->
         <p>
           Nice to meet you, I'm Lois! I'm currently working as a Software
           Engineer Apprentice at Vodafone UK doing my Level 4 Software
@@ -238,6 +239,7 @@
           eliminating the stigma and changing the landscape of how
           neurodiversity is perceived...
         </p>
+        <!-- Photo of Me -->
         <img
           src="./assets/ImageOfMe1.jpeg"
           alt="Picture of Lois"
@@ -252,51 +254,62 @@
         </div>
         <p class="lois-wide">HTML & CSS</p>
         <div class="lois-white">
-          <div class="lois-dark-grey" style="height: 28px; width: 85%"></div>
+          <div class="lois-dark-grey" style="height: 28px; width: 75%"></div>
         </div>
         <p class="lois-wide">Regular Expressions</p>
         <div class="lois-white">
-          <div class="lois-dark-grey" style="height: 28px; width: 80%"></div>
+          <div class="lois-dark-grey" style="height: 28px; width: 90%"></div>
         </div>
         <p class="lois-wide">Python</p>
         <div class="lois-white">
-          <div class="lois-dark-grey" style="height: 28px; width: 95%"></div>
+          <div class="lois-dark-grey" style="height: 28px; width: 65%"></div>
         </div>
         <p class="lois-wide">C# in an age long ago</p>
         <div class="lois-white">
-          <div class="lois-dark-grey" style="height: 28px; width: 85%"></div>
+          <div class="lois-dark-grey" style="height: 28px; width: 25%"></div>
         </div>
         <p class="lois-wide">Computer Hardware</p>
         <div class="lois-white">
-          <div class="lois-dark-grey" style="height: 28px; width: 100%"></div>
+          <div class="lois-dark-grey" style="height: 28px; width: 70%"></div>
         </div>
-        <h3 class="lois-padding-16 lois-text-light-grey">My Soft Skills</h3>
+        <h3 class="lois-padding-16 lois-text-light-grey">
+          My Soft Skills & Hobbies
+        </h3>
         <p class="lois-wide">Photography</p>
         <div class="lois-white">
-          <div class="lois-dark-grey" style="height: 28px; width: 95%"></div>
+          <div class="lois-dark-grey" style="height: 28px; width: 70%"></div>
         </div>
-        <p class="lois-wide">something</p>
-        <div class="lois-white">
-          <div class="lois-dark-grey" style="height: 28px; width: 85%"></div>
-        </div>
-        <p class="lois-wide">something</p>
+        <p class="lois-wide">Singing</p>
         <div class="lois-white">
           <div class="lois-dark-grey" style="height: 28px; width: 80%"></div>
         </div>
-        <p class="lois-wide">something</p>
+        <p class="lois-wide">Playing Guitar/Bass Guitar</p>
+        <div class="lois-white">
+          <div class="lois-dark-grey" style="height: 28px; width: 60%"></div>
+        </div>
+        <p class="lois-wide">Digital Art</p>
+        <div class="lois-white">
+          <div class="lois-dark-grey" style="height: 28px; width: 75%"></div>
+        </div>
+        <p class="lois-wide">Gaming</p>
+        <div class="lois-white">
+          <div class="lois-dark-grey" style="height: 28px; width: 45%"></div>
+        </div>
+        <p class="lois-wide">Creating Things</p>
+        <div class="lois-white">
+          <div class="lois-dark-grey" style="height: 28px; width: 75%"></div>
+        </div>
+        <p class="lois-wide">Hard Working</p>
         <div class="lois-white">
           <div class="lois-dark-grey" style="height: 28px; width: 95%"></div>
         </div>
-        <p class="lois-wide">something</p>
-        <div class="lois-white">
-          <div class="lois-dark-grey" style="height: 28px; width: 85%"></div>
-        </div>
         <p class="lois-wide">Being Silly</p>
         <div class="lois-white">
-          <div class="lois-dark-grey" style="height: 28px; width: 100%"></div>
+          <div class="lois-dark-grey" style="height: 28px; width: 99%"></div>
         </div>
         <br />
 
+        <h3 class="lois-padding-16 lois-text-light-grey">My Experience</h3>
         <div
           class="lois-row lois-center lois-padding-16 lois-section lois-light-grey"
         >
@@ -339,93 +352,141 @@
           </div>
         </div>
 
+        <!-- Funny lil slogan -->
+        <p>
+          All <em>THIS</em> ... and so much more... For the
+          <em>small price</em> of your sanity!!
+        </p>
+        <p>
+          I'm okay really, please download my resume
+          <em>(pssstt - its a piture of a dog).</em>
+        </p>
+        <!-- Resume Button to take you to Doggo -->
         <button
+          id="resume-button"
           class="lois-button lois-light-grey lois-padding-large lois-section"
         >
-          <a href="resume">Download Resume</a>
+          <a href="./resume.html">Download Resume</a>
         </button>
 
-        <!-- Grid for pricing tables -->
-        <h3 class="lois-padding-16 lois-text-light-grey">My Price</h3>
+        <!-- Grid For Games -->
+        <h3 class="lois-padding-16 lois-text-light-grey">
+          My Two Favourite Games
+        </h3>
+        <!-- Hover Box One -->
         <div class="lois-row-padding" style="margin: 0 -16px">
-          <div class="lois-half lois-margin-bottom">
-            <ul
-              class="lois-ul lois-white lois-center lois-opacity lois-hover-opacity-off"
+          <div class="lois-half">
+            <div
+              class="lois-opacity lois-hover-opacity-off"
+              style="display: flex; flex-direction: column"
             >
-              <li class="lois-dark-grey lois-xlarge lois-padding-32">Basic</li>
-              <li class="lois-padding-16">Web Design</li>
-              <li class="lois-padding-16">Photography</li>
-              <li class="lois-padding-16">5GB Storage</li>
-              <li class="lois-padding-16">Mail Support</li>
-              <li class="lois-padding-16">
-                <h2>$ 10</h2>
-                <span class="lois-opacity">per month</span>
-              </li>
-              <li class="lois-light-grey lois-padding-24">
+              <img
+                class="lois-whole"
+                alt="the last of us"
+                src="./assets/the-last-of-us.jpg"
+              />
+              <a
+                href="https://store.steampowered.com/app/1888930/The_Last_of_Us_Part_I/"
+              >
                 <button
                   class="lois-button lois-white lois-padding-large lois-hover-black"
                 >
-                  Sign Up
+                  Link to Steam Store
                 </button>
-              </li>
-            </ul>
+              </a>
+            </div>
           </div>
 
+          <!-- Hover Box Two -->
           <div class="lois-half">
-            <ul
-              class="lois-ul lois-white lois-center lois-opacity lois-hover-opacity-off"
+            <div
+              class="lois-opacity lois-hover-opacity-off"
+              style="display: flex; flex-direction: column"
             >
-              <li class="lois-dark-grey lois-xlarge lois-padding-32">Pro</li>
-              <li class="lois-padding-16">Web Design</li>
-              <li class="lois-padding-16">Photography</li>
-              <li class="lois-padding-16">50GB Storage</li>
-              <li class="lois-padding-16">Endless Support</li>
-              <li class="lois-padding-16">
-                <h2>$ 25</h2>
-                <span class="lois-opacity">per month</span>
-              </li>
-              <li class="lois-light-grey lois-padding-24">
+              <img
+                class="lois-whole"
+                alt="outerwilds"
+                src="./assets/outerwilds2.jpg"
+              />
+              <a href="https://store.steampowered.com/app/753640/Outer_Wilds/">
                 <button
                   class="lois-button lois-white lois-padding-large lois-hover-black"
                 >
-                  Sign Up
+                  Link to Steam Store
                 </button>
-              </li>
-            </ul>
+              </a>
+            </div>
           </div>
-          <!-- End Grid/Pricing tables -->
+          <!-- End of Grid For Games -->
         </div>
 
-        <!-- Testimonials -->
-        <h3 class="lois-padding-24 lois-text-light-grey">My Reputation</h3>
-        <img
-          src="/w3images/bandmember.jpg"
-          alt="Avatar"
-          class="lois-left lois-circle lois-margin-right"
-          style="width: 80px"
-        />
+        <!-- Grid for Songs -->
+        <h3 class="lois-padding-16 lois-text-light-grey">Two Songs I Wrote</h3>
+
+        <div class="lois-row-padding" style="margin: 0 -16px">
+          <div class="lois-half">
+            <div
+              class="lois-opacity lois-hover-opacity-off"
+              style="display: flex; flex-direction: column"
+            >
+              <img
+                class="lois-whole"
+                alt="the last of us"
+                src="./assets/song-autumn-snapshot.png"
+              />
+              <a href="https://www.youtube.com/watch?v=y0TyOehPvVY">
+                <button
+                  class="lois-button lois-white lois-padding-large lois-hover-black"
+                >
+                  Link to Youtube
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hover Box Two -->
+          <div class="lois-half">
+            <div
+              class="lois-opacity lois-hover-opacity-off"
+              style="display: flex; flex-direction: column"
+            >
+              <img
+                class="lois-whole"
+                alt="outerwilds"
+                src="./assets/song-nosuchthingasenough-snapshot.png"
+              />
+              <a href="https://store.steampowered.com/app/753640/Outer_Wilds/">
+                <button
+                  class="lois-button lois-white lois-padding-large lois-hover-black"
+                >
+                  Link to Youtube
+                </button>
+              </a>
+            </div>
+          </div>
+          <!-- End of Grid For Songs -->
+        </div>
+
+        <!-- Quote Section -->
+        <h3 class="lois-padding-24 lois-text-light-grey">Some Nice Quotes</h3>
+        <p>"placeholder quote."</p>
         <p>
-          <span class="lois-large lois-margin-right">Chris Fox.</span> CEO at
-          Mighty Schools.
+          <span class="lois-large lois-margin-right">Placeholder Person.</span>
+          CEO at Doing things.
         </p>
-        <p>John Doe saved us from a web disaster.</p>
+
         <br />
 
-        <img
-          src="/w3images/avatar_g2.jpg"
-          alt="Avatar"
-          class="lois-left lois-circle lois-margin-right"
-          style="width: 80px"
-        />
+        <p>"placeholder quote."</p>
         <p>
-          <span class="lois-large lois-margin-right">Rebecca Flex.</span> CEO at
-          Company.
+          <span class="lois-large lois-margin-right">Placeholder Person.</span>
+          CEO at a House.
         </p>
-        <p>No one is better than John Doe.</p>
+
         <!-- End About Section -->
       </div>
 
-      <!-- Portfolio Section -->
+      <!-- Hobby Section -->
       <div class="lois-padding-64 lois-content" id="photos">
         <h2 class="lois-text-light-grey">A Showcase of My Hobbies</h2>
         <hr style="width: 200px" class="lois-opacity" />
@@ -433,22 +494,21 @@
         <!-- Grid for photos -->
         <div class="lois-row-padding" style="margin: 0 -16px">
           <div class="lois-half">
-            <img src="/w3images/wedding.jpg" style="width: 100%" />
-            <img src="/w3images/rocks.jpg" style="width: 100%" />
-            <img src="/w3images/sailboat.jpg" style="width: 100%" />
+            <img src="./assets/just-be-a-rock1.jpg" style="width: 100%" />
+            <img src="./assets/just-be-a-rock1.jpg" style="width: 100%" />
+            <img src="./assets/just-be-a-rock1.jpg" style="width: 100%" />
           </div>
 
           <div class="lois-half">
-            <img src="/w3images/underwater.jpg" style="width: 100%" />
-            <img src="/w3images/chef.jpg" style="width: 100%" />
-            <img src="/w3images/wedding.jpg" style="width: 100%" />
+            <img src="./assets/just-be-a-rock1.jpg" style="width: 100%" />
+            <img src="./assets/just-be-a-rock1.jpg" style="width: 100%" />
+            <img src="./assets/just-be-a-rock1.jpg" style="width: 100%" />
           </div>
           <!-- End photo grid -->
         </div>
-        <!-- End Portfolio Section -->
       </div>
 
-      <!-- Portfolio Section -->
+      <!-- Portfolio/Code Section -->
       <div class="lois-padding-64 lois-content" id="code">
         <h2 class="lois-text-light-grey">Some of my code</h2>
         <hr style="width: 200px" class="lois-opacity" />
@@ -456,18 +516,18 @@
         <!-- Grid for photos -->
         <div class="lois-row-padding" style="margin: 0 -16px">
           <div class="lois-half">
-            <img src="/w3images/wedding.jpg" style="width: 100%" />
-            <img src="/w3images/rocks.jpg" style="width: 100%" />
+            <img src="./assets/code-snippet.png" style="width: 100%" />
+            <img src="./assets/code-snippet.png" style="width: 100%" />
           </div>
 
           <div class="lois-half">
-            <img src="/w3images/underwater.jpg" style="width: 100%" />
-            <img src="/w3images/chef.jpg" style="width: 100%" />
+            <img src="./assets/code-snippet.png" style="width: 100%" />
+            <img src="./assets/code-snippet.png" style="width: 100%" />
           </div>
           <!-- End photo grid -->
         </div>
-        <!-- End Portfolio Section -->
       </div>
+      <!-- End Portfolio Section -->
 
       <!-- Contact Section -->
       <div class="lois-padding-64 lois-content lois-text-grey" id="contact">
@@ -477,19 +537,19 @@
         <div class="lois-section">
           <p>
             <i class="lois-text-white lois-xxlarge lois-margin-right"></i>
-            Chicago, US
+            London, UK
           </p>
           <p>
             <i class="lois-text-white lois-xxlarge lois-margin-right"></i>
-            Phone: +00 151515
+            Phone: (415)&nbsp;555&#8209;0132
           </p>
           <p>
             <i class="lois-text-white lois-xxlarge lois-margin-right"> </i>
-            Email: mail@mail.com
+            Email: email@gmail.com
           </p>
         </div>
         <br />
-        <p>Let's get in touch. Send me a message:</p>
+        <p>Send me a message: <em>I guess?</em></p>
 
         <form action="/action_page.php" target="_blank">
           <p>
@@ -533,7 +593,7 @@
               class="lois-button lois-light-grey lois-padding-large"
               type="submit"
             >
-              <i></i> SEND MESSAGE
+              SEND MESSAGE
             </button>
           </p>
         </form>
@@ -582,8 +642,6 @@
         <p class="lois-medium" style="text-align: center">Powered by Coffee</p>
         <!-- End footer -->
       </footer>
-
-      <!-- END PAGE CONTENT -->
     </div>
   </body>
 </html>
